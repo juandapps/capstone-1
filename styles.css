@@ -38,6 +38,7 @@ body {
   height: 25px;
   z-index: 100;
   margin-top: 1rem;
+  position: absolute;
 }
 
 #mobileMenu .bar,
@@ -46,7 +47,7 @@ body {
   content: '';
   display: block;
   height: 4px;
-  background-color: var(--black);
+  background-color: var(--gray);
   margin: 4px 0;
   transition: 0.4s;
 }
@@ -66,7 +67,7 @@ body {
 #overlay {
   position: absolute;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(0, 1, 255, 0.3);
   backdrop-filter: blur(4px);
   display: none;
   flex-direction: column;
@@ -94,13 +95,13 @@ body {
 }
 
 #overlay #menu li a {
-  color: var(--black);
+  color: var(--gray);
   font-size: 1.6rem;
   font-weight: 700;
 }
 
 #logo {
-  display: flex;
+  display: none;
   justify-content: center;
   z-index: 99;
   width: 100%;
@@ -117,9 +118,9 @@ body {
   align-items: center;
   text-align: center;
   background: linear-gradient(
-    rgba(255, 255, 255, 0.9),
-    rgba(255, 255, 255, 0.4),
-    rgba(255, 255, 255, 0.9)
+    rgba(39, 42, 49, 0.4),
+    rgba(236, 82, 66, 0.4),
+    rgba(255, 255, 255, 0.4)
   );
   color: var(--black);
   position: relative;

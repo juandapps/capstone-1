@@ -1,6 +1,8 @@
 const menu = document.querySelector('#mobileMenu');
 const overlay = document.querySelector('#overlay');
 const logo = document.querySelector('#logo');
+const body = document.querySelector('body');
+const info = document.querySelector('.hero-info');
 
 function hamburger() {
   menu.addEventListener('click', () => {
@@ -10,11 +12,17 @@ function hamburger() {
       menu.style.position = 'absolute';
       logo.style.position = 'absolute';
       logo.style.marginTop = '1rem';
+      body.style.overflow = 'hidden';
+      logo.style.display = 'flex';
+      info.style.visibility = 'hidden';
     } else {
       overlay.style.display = 'none';
       menu.style.removeProperty('position');
       logo.style.removeProperty('position');
       logo.style.removeProperty('margin');
+      body.style.removeProperty('overflow');
+      logo.style.display = 'none';
+      info.style.removeProperty('visibility');
     }
   });
 }
