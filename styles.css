@@ -157,6 +157,66 @@ body {
   margin-top: 3rem;
 }
 
+/* PROGRAM */
+.program-container {
+  background: url('./img/main-program-pattern.png');
+  background-color: var(--black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.program-container h2 {
+  color: var(--gray);
+  margin-top: 3rem;
+}
+
+.program-container hr {
+  height: 4px;
+  background: var(--orange);
+  width: 5%;
+  border-radius: 8px;
+  margin: 2rem;
+  color: var(--orange);
+}
+
+.program-card {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  width: 80%;
+  margin: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.program-card h3 {
+  color: var(--orange);
+  margin: 0 auto;
+}
+
+.program-card p {
+  width: 75%;
+  color: var(--gray);
+}
+
+.program-container button:nth-child(4) {
+  color: var(--gray);
+  background: var(--orange);
+  padding: 1rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.6rem;
+  margin: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
 /* RESPONSIVENESS */
 @media (min-width: 768px) {
   #mobileMenu,
