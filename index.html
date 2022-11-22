@@ -6,32 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ethereum Community Conference</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css"
+      integrity="sha512-cn16Qw8mzTBKpu08X0fwhTSv02kK/FojjNLz0bwp2xJ4H+yalwzXKFw/5cLzuBZCxGWIA+95X4skzvo8STNtSg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <!-- HOME PAGE  -->
     <!-- S-NAVBAR -->
     <nav id="navbar">
-      <span id="social"></span>
+      <div id="social">
+        <ul class="social-items">
+          <li class="bx bxl-facebook"></li>
+          <li class="bx bxl-twitter"></li>
+          <li>Logout</li>
+          <li>Mypage</li>
+          <li>Crypto</li>
+        </ul>
+      </div>
       <div id="mobileMenu">
-        <span class="burger"></span>
-        <span class="burger"></span>
-        <span class="burger"></span>
+        <span class="bar"></span>
       </div>
       <div id="logo">
-        <img src="./img/logo.png" alt="ethereum community conference logo" />
+        <img
+          src="./img/logo.png"
+          alt="ethereum community conference logo"
+          width="170px"
+          height="120px"
+        />
         <h2>ETHCC</h2>
       </div>
-      <ul id="menu">
-        <!-- Add Event to switch to About onClick -->
-        <li><a href="#about"></a></li>
-        <li><a href="#program"></a></li>
-        <li><a href="#join"></a></li>
-        <li><a href="#partners"></a></li>
-        <!-- Takes to pg1 -->
-        <li><a href="#home">ETHCC</a></li>
-      </ul>
+      <div id="overlay">
+        <ul id="menu">
+          <!-- Add Event to switch to About onClick -->
+          <li><a href="#about">About</a></li>
+          <li><a href="#program">Program</a></li>
+          <li><a href="#join">Join</a></li>
+          <li><a href="#partners">Partners</a></li>
+          <!-- Takes to pg1 -->
+          <li><a href="#home">ETHCC</a></li>
+        </ul>
+      </div>
     </nav>
     <!-- S-SHERO -->
+    <section id="hero">
+      <div class="hero-container">
+        <div class="hero-info">
+          <h1>The future of Ethereum</h1>
+          <p>
+            The Ethereum Community Conference (EthCC) is the largest annual
+            European Ethereum event focused on technology and community. Three
+            intense days of conferences, networking and learning.
+          </p>
+          <h2>2022-10-(15) ~ 16 (FRI)</h2>
+          <p>@ Maison de la Mutualité, Paris, France.</p>
+        </div>
+        <video class="video-bg" autoplay muted loop>
+          <source
+            src="assets/pexels-mikhail-nilov-8059254.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+    </section>
     <!-- S-MAIN PROGRAM -->
     <!-- S-SPEAKERS -->
     <!-- S-PARTNERS -->
