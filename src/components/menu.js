@@ -24,6 +24,19 @@ function hamburger() {
       logo.style.display = 'none';
       info.style.removeProperty('visibility');
     }
+
+    document.querySelectorAll('.menu-link').forEach((e) => {
+      e.addEventListener('click', () => {
+        menu.classList.remove('is-active');
+        overlay.style.display = 'none';
+        menu.style.removeProperty('position');
+        logo.style.removeProperty('position');
+        logo.style.removeProperty('margin');
+        body.style.removeProperty('overflow');
+        logo.style.display = 'none';
+        info.style.removeProperty('visibility');
+      });
+    });
   });
 }
 
