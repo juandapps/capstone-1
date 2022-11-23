@@ -28,4 +28,4 @@ const programData = [
 
 function mainProgram() {}
 
-export { mainProgram }; //eslint-disable-line
+export { mainProgram, programData }; //eslint-disable-line
