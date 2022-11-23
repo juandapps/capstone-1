@@ -431,4 +431,25 @@ body {
     margin-bottom: 1rem;
     color: var(--orange);
   }
+
+  #footer {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  #footer .copyright {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+  }
+
+  .copyright p:last-child {
+    font-size: 1rem;
+  }
 }
