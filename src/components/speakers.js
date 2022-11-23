@@ -48,8 +48,10 @@ const container = document.createElement('div');
 container.classList.add('speakers-container');
 const h2 = document.createElement('h2');
 const hr = document.createElement('hr');
+const cardContainer = document.createElement('div');
 container.appendChild(h2);
 container.appendChild(hr);
+cardContainer.classList.add('speakers-card-container');
 
 function speakers(nameData, titleData, descriptionData, pfpData) {
   const speaker = document.createElement('div');
@@ -75,7 +77,8 @@ function speakers(nameData, titleData, descriptionData, pfpData) {
   description.innerHTML = descriptionData;
 
   root.appendChild(container);
-  container.appendChild(speaker);
+  container.appendChild(cardContainer);
+  cardContainer.appendChild(speaker);
   speaker.appendChild(speakerImg);
   speakerImg.appendChild(img);
   speaker.appendChild(profile);

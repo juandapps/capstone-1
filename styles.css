@@ -212,7 +212,7 @@ body {
   color: var(--gray);
 }
 
-.program-container button:nth-child(8) {
+.program-container button:last-child {
   color: var(--gray);
   background: var(--orange);
   padding: 1rem;
@@ -225,6 +225,10 @@ body {
   display: flex;
   align-items: center;
   gap: 0.4rem;
+}
+
+.program-container h3:nth-child(4) {
+  display: none;
 }
 
 /* SPEAKERS */
@@ -342,6 +346,12 @@ body {
     gap: 1.3rem;
   }
 
+  /* NOT WORKING WHY? */
+  #dekstopMenu li:nth-child(5) a:first-child {
+    border: 3px solid var(--orange);
+    padding: 1px 8px;
+  }
+
   #desktopMenu li a {
     font-size: 1.5rem;
     color: var(--black);
@@ -350,5 +360,34 @@ body {
   #desktop h2 {
     color: var(--black);
     margin-right: auto;
+  }
+
+  /* PROGRAM */
+  .program-container {
+  }
+
+  .program-card-container {
+    display: flex;
+  }
+
+  .program-card {
+    flex-direction: column;
+  }
+
+  .program-container button:last-child {
+    display: none;
+  }
+
+  .program-container h3:nth-child(4) {
+    color: var(--gray);
+    margin: 3rem;
+    text-decoration: underline;
+    cursor: pointer;
+    display: block;
+  }
+
+  .speakers-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
