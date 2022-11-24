@@ -309,6 +309,10 @@ body {
   display: none;
 }
 
+#footer {
+  display: none;
+}
+
 /* RESPONSIVENESS */
 @media (min-width: 768px) {
   #mobileMenu {
